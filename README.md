@@ -32,26 +32,16 @@ given a month?
 ### Documentation:
 
 1. Instructions on how to build/run application
-
-ruby 2.7.2 has been used to develop this application. sqlite has been ussed for relational database
-
-To run this project one should have Ruby on Rails setup in his/her machine.
-
-Use Git Bash or cmd to run this application:
-
-Step 1: Go to project location using Git Bash
-Example: cd /f/myrails/clock-in-out
-Step 2: run "bundle install"
-Example: bundle install
-Step 3: run "rails db:setup"
-Example: rails db:setup
-Step 4: run "RAILS_ENV=test rails db:setup" for test cases
-Example: RAILS_ENV=test rails db:setup
-Step 5: run "rails test" (for unit test)
-Example: rails test
-Step 6: run "rails s" to start server
-Example: rails s
-Step 7: Visit "http://localhost:3000" in your browser
+   - ruby 2.7.2 has been used to develop this application. sqlite has been ussed for relational database
+   - To run this project one should have Ruby on Rails setup in his/her machine.
+   - Use Git Bash or cmd to run this application:
+      1. Step 1: Go to project location using Git Bash (Example: cd /f/myrails/clock-in-out )
+      2. Step 2: run "bundle install" (Example: bundle install )
+      3. Step 3: run "rails db:setup" (Example: rails db:setup )
+      4. Step 4: run "RAILS_ENV=test rails db:setup" for test cases (Example: RAILS_ENV=test rails db:setup )
+      5. Step 5: run "rails test" for unit test (Example: rails test )
+      6. Step 6: run "rails s" to start server (Example: rails s )
+      7. Step 7: Visit "http://localhost:3000" in your browser
 
 2. Approach to the solution:
    - Since it is super easier and faster to build a CRUD (create, read, update, delete/destroy) application using Ruby on Rails I decided to go with Ruby on Rails (ruby 2.7.2 and rails 6.0.3.4) framework to accomplish this project. A simple form containing a text box (for teacher's name) and a check box (for clock in or out) has been used for allowing a teacher to create a clock in/out event. However, system generated current time is considered as logged time in this case. Note: checked box is considered as clock-in, whereas, unchecked box is considered as clock-out.
