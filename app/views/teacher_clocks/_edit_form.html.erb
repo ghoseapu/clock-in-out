@@ -1,0 +1,18 @@
+<%= form_with model: @teacher_clock, local: true, class: 'form' do |form| %>
+  <div class="field form-group">
+    <span class="badge badge-primary">Teacher's Name</span>
+    <%= form.text_field :teacher_name, class: "form-control" %>
+  </div>
+  <div class="field form-group">
+      <span class="badge badge-primary">Teacher's Logged Time</span>
+      <%= form.datetime_field :teacher_logged_time, class: "form-control" %>
+  </div>
+  <div class="form-group form-check">
+    <%= form.check_box :teacher_clocked_in, class: "form-check-input" %>
+    <%= form.label :teacher_clocked_in, "Check Box (ONLY to Clock In)", class: "form-check-label" %>
+  </div>
+  <br/>
+  <div class="actions">
+    <%= form.submit "Edit Clock In-Out Event", class: "btn btn-secondary" %>
+  </div>
+<% end %>

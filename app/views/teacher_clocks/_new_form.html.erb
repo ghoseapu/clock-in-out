@@ -1,0 +1,14 @@
+<%= form_with scope: :teacher_clock, url: teacher_clocks_path, local: true, class: 'form' do |form| %>
+  <div class="field form-group">
+    <%= form.text_field :teacher_name, class: "form-control", placeholder: "Teacher's Name" %>
+  </div>
+  <div class="form-group form-check">
+    <%= form.check_box :teacher_clocked_in, class: "form-check-input" %>
+    <%= form.label :teacher_clocked_in, "Check Box (ONLY to Clock In)", class: "form-check-label" %>
+  </div>
+  <br/>
+  <div class="actions">
+    <%= form.submit "Create Clock In-Out Event", class: "btn btn-secondary" %>
+  </div>
+<% end %>
+  

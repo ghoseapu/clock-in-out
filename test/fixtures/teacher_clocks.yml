@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teacher_name: MyString
+  teacher_clocked_in: false
+  teacher_logged_time: 2020-12-10 19:20:02
+
+two:
+  teacher_name: MyString
+  teacher_clocked_in: false
+  teacher_logged_time: 2020-12-10 19:20:02
